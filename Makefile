@@ -5,7 +5,7 @@ PACKAGE=$(shell basename $(LOCALPWD))
 GOPATH=$(shell go env GOPATH)
 
 .PHONY: dependence
-build: ## make deps and checksum of direct/indirect dep 
+dependence: ## make deps and checksum of direct/indirect dep 
 	go mod init $(PACKAGE)
 	go mod tidy
 
